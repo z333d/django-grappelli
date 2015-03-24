@@ -1,7 +1,7 @@
 {% load admin_static i18n grp_tags %}
 
 <!-- group -->
-<div class="grp-group grp-stacked {% if inline_admin_formset.opts.classes %} {{ inline_admin_formset.opts.classes|join:" " }}{% endif %}"
+<div class="grp-group grp-stacked {% if inline_admin_formset.opts.classes %} {{ inline_admin_formset.opts.classes|join:"" }}{% endif %}"
     id="{{ inline_admin_formset.formset.prefix }}-group">
     <h2 class="grp-collapse-handler">{% if inline_admin_formset.opts.title %}{{ inline_admin_formset.opts.title }}{% else %}{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}{% endif %}</h2>
     <ul class="grp-tools">
